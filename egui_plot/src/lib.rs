@@ -10,7 +10,6 @@
 
 mod aesthetics;
 mod axis;
-mod axis_transform;
 mod bounds;
 mod colors;
 mod cursor;
@@ -18,7 +17,6 @@ mod data;
 mod grid;
 mod items;
 mod label;
-mod log_helper;
 mod math;
 mod memory;
 mod overlays;
@@ -33,10 +31,6 @@ pub use crate::aesthetics::Orientation;
 pub use crate::axis::Axis;
 pub use crate::axis::AxisHints;
 pub use crate::axis::PlotTransform;
-pub use crate::axis_transform::AxisTransform;
-pub use crate::axis_transform::AxisTransformKind;
-pub use crate::axis_transform::LinearAxisTransform;
-pub use crate::axis_transform::LogAxisTransform;
 pub use crate::bounds::PlotBounds;
 pub use crate::bounds::PlotPoint;
 pub use crate::colors::color_from_strength;
@@ -82,8 +76,3 @@ pub use crate::placement::VPlacement;
 pub use crate::plot::Plot;
 pub use crate::plot::PlotResponse;
 pub use crate::plot::PlotUi;
-
-// Re-export log scale formatters
-pub use crate::log_helper::log_formatter_computer;
-pub use crate::log_helper::log_formatter_engineering;
-pub use crate::log_helper::log_formatter_superscript;
